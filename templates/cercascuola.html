@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: auto;
+}
+
+/* Style the topnav links */
+.topnav a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: 5px solid black;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 0px;
+  padding-right: 275px;
+  padding-bottom: 10px;
+  padding-left: 275px;
+  text-decoration: none;
+}
+.topnav-left{
+  float: left;
+  background-color: #00BFFF;
+}
+.topnav-right{
+  float: right;
+  background-color: #87CEEB;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.modulo-ricerca {
+  background-color: #f6f6f600;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8px;
+  width: 600px;
+}
+
+.modulo-ricerca #search {
+  border: 3px solid black;
+  -webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  -moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #999;
+  float: left;
+  font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+  box-sizing: border-box;
+  height: 42px;
+  padding: 10px;
+  width: 480px;
+}
+
+.modulo-ricerca #search:-moz-placeholder,
+.modulo-ricerca #search:-ms-input-placeholder,
+.modulo-ricerca #search::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+}
+
+.modulo-ricerca #submit {
+  background-color: #00994D;
+  border: 3px solid black;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFF;
+  cursor: pointer;
+  height: 42px;
+  float: right;
+  font: 15px Arial, Helvetica;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+  width: 100px;
+}
+
+.modulo-ricerca #submit:hover,
+.modulo-ricerca #submit:focus,
+.modulo-ricerca #submit:active {
+  background-color: #00B359;
+}
+.modulo-ricerca #search-left {
+    float: left;
+    background-color: #87CEEB;
+
+}
+.modulo-ricerca #submit-right {
+    float: right;
+    background-color: #87CEEB;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 35%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 4px solid black;
+    width: 300px;
+    font-size: 120%;
+    background-color: #f1f1f1;
+    height: 88%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto;
+}
+            
+a {
+    display: block;
+    color: #000; /* #1D2A35; */
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+            
+a.active {
+    background-color: #1F77B4;
+    color: white;
+}
+a:hover:not(.active) {
+    background-color: #d1d1fa; /*#0066ff; /*#1a53d4;*/
+    color: black;
+} 
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <h2><a href="#" class="topnav-left">Spiegazione Progetto</a></h2>
+  <h2><a href="#" class="topnav-right">Cerca la tua Scuola</a></h2>
+</div>
+<div class="row">
+  <div class="column side">
+  <form>
+    <ul>
+      <li><a href="/" class="bottone">INSUCCESSI</a></li>
+      <li><a href="/" class="bottone">REGOLARITA</a></li>
+      <li><a href="/" class="bottone">GRAFICI</a></li>
+    </ul>
+</form> 
+  </div>
+  
+  <div class="column middle">
+    <h2>CERCA LA TUA SCUOLA</h2>
+      <form class="modulo-ricerca">
+      <input id="search" type="text" placeholder="Type..." required>       
+      <input id="submit" type="submit" value="->">
+</form>
+
+  </div>
+</div>
+
+</body>
+</html>
